@@ -1,0 +1,13 @@
+#Ignore all in the following directory
+/*
+
+# Only include the klipper config folder, moonraker DB, bash script for backups and the gitignore file
+!.moonraker_database/
+!klipper_config/
+!.gitignore
+
+
+# Ignore the automated backups and readme.md
+klipper_config/printer-*.cfg
+klipper_config/timelapse.cfg
+README.md
