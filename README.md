@@ -12,11 +12,11 @@ Note that backup.sh is saved locally due to personal access token information be
 
 ## Voron mods to print/build wishlist
 
-- [ ] Ramalama idlers    https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers
-- [ ] Removeable door     hinges: https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors
-- [ ] Purge bucket       https://github.com/midnite3dp/voron-bedpan
-- [ ] Nevermore          https://github.com/nevermore3d/Nevermore_Micro
-- [ ] GE5C Z Idlers      https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
+- [ ] Ramalama idlers         https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers
+- [ ] Removeable door hinges  https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors
+- [ ] Purge bucket            https://github.com/midnite3dp/voron-bedpan
+- [ ] Nevermore               https://github.com/nevermore3d/Nevermore_Micro
+- [ ] GE5C Z Idlers           https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
 
 ## Voron mods completed and installed
 
