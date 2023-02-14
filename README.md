@@ -13,6 +13,7 @@ Note that backup.sh is saved locally due to personal access token information be
 ## Voron mods to print/build wishlist
 
 - [ ] Snap latches            https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020
+- [ ] Magnetic corner clips to go with above
 - [ ] Ramalama idlers         https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers
 - [ ] Removeable door hinges  https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors 
 - [ ] Rework back panel mod to have dual entry https://mods.vorondesign.com/detail/JpyUj2eynCA10xcD4UEdow
