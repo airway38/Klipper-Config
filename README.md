@@ -21,7 +21,7 @@ Note that backup.sh is saved locally due to personal access token information be
 - [x] Purge bucket            https://github.com/midnite3dp/voron-bedpan
 - [x] Nevermore               https://github.com/nevermore3d/Nevermore_Micro
 - [ ] GE5C Z Joints           https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
-- [ ] Spool holders           https://mods.vorondesign.com/detail/VjlccbeeOuH5iax4AFHA
+- [x] Spool holders           https://mods.vorondesign.com/detail/VjlccbeeOuH5iax4AFHA
 - [x] Chamber lighting                   https://github.com/VoronDesign/Voron-Hardware/tree/master/Daylight/Daylight_on_a_stick
 - [x] Rollers to assist in maintainence  https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/RockNLol/RockNRoll
 - [x] Side entry bowden                  https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry
