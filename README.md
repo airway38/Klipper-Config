@@ -43,7 +43,7 @@ Note that backup.sh is saved locally due to personal access token information be
 
 ## Voron mods to print/build wishlist
 
-- [ ] [[Snap latches](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020)
+- [ ] [Snap latches](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020)
 - [ ] [Pins mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod)
 - [ ] [Badge retractor for canbus wiring](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Badge_Retractor_Mount)
 - [ ] [Magnetic corner clips](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/bobbleheed/Magnetic_Panels)
