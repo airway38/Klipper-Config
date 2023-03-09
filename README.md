@@ -46,7 +46,7 @@ Note that backup.sh is saved locally due to personal access token information be
 - [ ] [Snap latches](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020)
 - [ ] [Pins mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod)
 - [ ] [Badge retractor for canbus wiring](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Badge_Retractor_Mount)
-- [ ] [Magnetic corner clips](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/bobbleheed/Magnetic_Panels)
+- [ ] [Magnetic corner clips](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Le0n/Magnetic_Panels_with_Magnet_Inserts)
 - [ ] [Ramalama idlers](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers)
 - [ ] [Removeable door hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors)
 - [ ] [GE5C Z Joints](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C)
