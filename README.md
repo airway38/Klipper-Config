@@ -41,6 +41,14 @@ All of the configuration and database files for Voron 2.4R2.
 
 Note that backup.sh is saved locally due to personal access token information being stored in it.
 
+## SuperSlicer backup
+
+Manual backups of the SuperSlicer config folder for profiles etc
+
+## Personal Voron modifications
+
+[Repo Link](https://github.com/airway38/Custom-CAD-Designs)
+
 ## Voron mods to print/build wishlist
 
 - [ ] [Snap latches](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020)
