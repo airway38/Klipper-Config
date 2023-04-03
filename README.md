@@ -52,15 +52,15 @@ Manual backups of the SuperSlicer config folder for profiles etc
 ## Voron mods to print/build wishlist
 
 - [ ] [Snap latches](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020)
-- [ ] [Pins mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod)
-- [ ] [Badge retractor for canbus wiring](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Badge_Retractor_Mount)
+- [x] [Pins mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod)
+- [x] [Badge retractor for canbus wiring](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Badge_Retractor_Mount)
 - [ ] [Magnetic corner clips](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Le0n/Magnetic_Panels_with_Magnet_Inserts)
-- [ ] [Ramalama idlers](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers)
-- [ ] [Removeable door hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors)
-- [ ] [GE5C Z Joints](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C)
+- [x] [Ramalama idlers](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers)
+- [x] [Removeable door hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors)
+- [x] [GE5C Z Joints](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C)
 
-- [ ] Rework back panel mod to have dual entry https://mods.vorondesign.com/detail/JpyUj2eynCA10xcD4UEdow
-- [ ] Adjust the bedpan wago mount to cover the cables
+- [x] Rework back panel mod to have dual entry https://mods.vorondesign.com/detail/JpyUj2eynCA10xcD4UEdow
+- [x] Adjust the bedpan wago mount to cover the cables
 
 - [x] [Purge bucket](https://github.com/midnite3dp/voron-bedpan)
 - [x] [Nevermore](https://github.com/nevermore3d/Nevermore_Micro)
