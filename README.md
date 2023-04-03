@@ -58,6 +58,7 @@ Manual backups of the SuperSlicer config folder for profiles etc
 - [x] [Ramalama idlers](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers)
 - [x] [Removeable door hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors)
 - [x] [GE5C Z Joints](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C)
+- [x] [Door Handles](https://www.printables.com/model/371814-tiny-door-handles-for-voron-24)
 
 - [x] Rework back panel mod to have dual entry https://mods.vorondesign.com/detail/JpyUj2eynCA10xcD4UEdow
 - [x] Adjust the bedpan wago mount to cover the cables
