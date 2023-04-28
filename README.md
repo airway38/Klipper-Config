@@ -51,7 +51,7 @@ Manual backups of the SuperSlicer config folder for profiles etc
 
 ## Voron mods to print/build wishlist
 
-- [ ] [The Filter(https://github.com/nateb16/VoronUsers/tree/master/printer_mods/nateb16/THE_FILTER)
+- [ ] [The Filter](https://github.com/nateb16/VoronUsers/tree/master/printer_mods/nateb16/THE_FILTER)
 
 - [ ] [Snap latches](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/richardjm/snap-latch-2020)
 - [x] [Pins mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod)
