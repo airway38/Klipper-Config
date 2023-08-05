@@ -1,5 +1,5 @@
 [server]
-host = 0.0.0.0
+host = 127.0.0.1
 port = 7125
 max_upload_size = 1024
 
@@ -8,16 +8,16 @@ enable_object_processing = True
 
 [authorization]
 cors_domains = 
-	https://my.mainsail.xyz
-	http://my.mainsail.xyz
-	http://*.local
-	http://*.lan
+	*://my.mainsail.xyz
+	*://*.local
+	*://*.lan
 trusted_clients = 
 	10.0.0.0/8
 	127.0.0.0/8
 	169.254.0.0/16
 	172.16.0.0/12
 	192.168.0.0/16
+	2404:440c:1a2c:3b00::/64
 	FE80::/10
 	::1/128
 
@@ -57,16 +57,6 @@ type = git_repo
 path = ~/klipper-led_effect
 origin = https://github.com/julianschill/klipper-led_effect.git
 is_system_service = False
-
-[update_manager mobileraker]
-type = git_repo
-path = ~/mobileraker_companion
-origin = https://github.com/Clon1998/mobileraker_companion.git
-primary_branch = main
-managed_services = mobileraker
-env = ~/mobileraker-env/bin/python
-requirements = scripts/mobileraker-requirements.txt
-install_script = scripts/install-mobileraker-companion.sh
 
 [update_manager Klipper-Adaptive-Meshing-Purging]
 type = git_repo
