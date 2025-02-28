@@ -67,7 +67,7 @@
             "runout_lane": "NONE",
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": null
+            "status": ""
         },
         "lane4": {
             "name": "lane4",
