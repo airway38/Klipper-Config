@@ -67,7 +67,7 @@
             "runout_lane": "lane4",
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": null
+            "status": "Error"
         },
         "lane4": {
             "name": "lane4",
@@ -87,7 +87,7 @@
             "color": "",
             "weight": "",
             "extruder_temp": null,
-            "runout_lane": "NONE",
+            "runout_lane": "lane4",
             "filament_status": "In Tool",
             "filament_status_led": "#0000ff",
             "status": "Tooled"
