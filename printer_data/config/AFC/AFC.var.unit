@@ -80,9 +80,9 @@
             "map": "T3",
             "load": true,
             "prep": true,
-            "tool_loaded": false,
-            "loaded_to_hub": false,
-            "material": null,
+            "tool_loaded": true,
+            "loaded_to_hub": true,
+            "material": "ABS",
             "spool_id": null,
             "color": null,
             "weight": null,
@@ -90,7 +90,7 @@
             "runout_lane": "NONE",
             "filament_status": "In Tool",
             "filament_status_led": "#0000ff",
-            "status": "Loaded"
+            "status": "Tooled"
         }
     },
     "system": {
