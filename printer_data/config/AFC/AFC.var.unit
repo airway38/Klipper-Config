@@ -82,7 +82,7 @@
             "prep": true,
             "tool_loaded": true,
             "loaded_to_hub": true,
-            "material": "ABS",
+            "material": null,
             "spool_id": null,
             "color": null,
             "weight": null,
