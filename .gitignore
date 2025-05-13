@@ -1,6 +1,6 @@
 .env
 secrets.conf
-printer_data/.theme
+printer_data/config/.theme
 *.swp
 *.tmp
 printer-[0-9]*_[0-9]*.cfg
