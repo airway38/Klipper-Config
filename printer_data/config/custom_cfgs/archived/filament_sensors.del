@@ -1,0 +1,193 @@
+[filament_motion_sensor SFS_1]
+detection_length: 10
+extruder: extruder
+switch_pin: ^PG12
+pause_on_runout: True
+runout_gcode:
+	M117 Filament issue detected!	
+	PAUSE
+	#{action_respond_info("RUNOUT: Filament runout")}
+	#M600
+event_delay: 3.0
+pause_delay: 0.5
+
+[filament_motion_sensor SFS_2]
+detection_length: 10
+extruder: extruder
+switch_pin: ^PG13
+pause_on_runout: True
+runout_gcode:
+	M117 Filament issue detected!	
+	PAUSE
+	#{action_respond_info("RUNOUT: Filament runout")}
+	#M600
+event_delay: 3.0
+pause_delay: 0.5
+
+
+
+[delayed_gcode DISABLE_FILAMENT_SENSORS] ; This will disable the SFS 1 second after klipper starts
+initial_duration: 1
+gcode:
+    SET_FILAMENT_SENSOR SENSOR=SFS_1 ENABLE=0
+	SET_FILAMENT_SENSOR SENSOR=SFS_2 ENABLE=0
+
+[gcode_macro SFS_1_ENABLE] ; Add this to PRINT_START
+description: Enable smart filament sensor
+gcode:
+    M117 ENABLING the Smart Filament Sensor SFS_1
+    G92 E0
+    SET_FILAMENT_SENSOR SENSOR=SFS_1 ENABLE=1 
+
+[gcode_macro SFS_1_DISABLE] ; Add this to PRINT_END and PRINT_CANCEL
+description: Disable smart filament sensor 
+gcode:
+    M117 DISABLING the Smart Filament Sensor SFS_1
+    G92 E0
+    SET_FILAMENT_SENSOR SENSOR=SFS_1 ENABLE=0
+	
+[gcode_macro SFS_2_ENABLE] ; Add this to PRINT_START
+description: Enable smart filament sensor
+gcode:
+    M117 ENABLING the Smart Filament Sensor SFS_2
+    G92 E0
+    SET_FILAMENT_SENSOR SENSOR=SFS_2 ENABLE=1 
+
+[gcode_macro SFS_2_DISABLE] ; Add this to PRINT_END and PRINT_CANCEL
+description: Disable smart filament sensor 
+gcode:
+    M117 DISABLING the Smart Filament Sensor SFS_2
+    G92 E0
+    SET_FILAMENT_SENSOR SENSOR=SFS_2 ENABLE=0
+	
+	
+	
+	
+	
+	
+
+# [gcode_macro SENSOR_LAYER_CHECK]
+# description: Checks the current layer number, and if number 2, then enable the sensor that was last in use.
+# gcode:
+	# {% set curr_layer = printer.print_stats.info.current_layer %}	 
+	
+	# {% if curr_layer == 2 %}		
+
+		# M118 Enabling filament sensor now
+		
+		# RESTORE_FILAMENT_SENSOR
+	
+	# {% endif %}	
+		
+
+# [gcode_macro SET_FILAMENT_SENSOR]
+# description: Advanced method of setting the filament sensor based on 2 sensors.
+# rename_existing: SET_FILAMENT_SENSOR_BASE
+# gcode:
+
+	# {% if printer.save_variables.variables.filament_sensor is not defined %}
+
+		# {% set filament_sensor = {params.SENSOR|string: params.ENABLE|int} %}
+		
+	# {% else %}
+		
+		# {% set filament_sensor = printer.save_variables.variables.filament_sensor %}			
+		# {% set _dummy = filament_sensor.update({params.SENSOR|string: params.ENABLE|int}) %}
+	
+	# {% endif %}		
+	
+	# #M118 {printer.save_variables.variables.filament_sensor}
+
+	# SET_FILAMENT_SENSOR_BASE SENSOR={params.SENSOR} ENABLE={params.ENABLE}
+	
+	# SAVE_VARIABLE VARIABLE=filament_sensor VALUE="{filament_sensor}"
+	
+	
+	
+		
+# [gcode_macro RESTORE_FILAMENT_SENSOR]
+# description: Restore the filament sensors on/off as per the last setting.
+# gcode:
+	# {% if printer.save_variables.variables.filament_sensor is defined %}
+	
+		# {% for sensor in printer.save_variables.variables.filament_sensor %}
+		
+			# SET_FILAMENT_SENSOR_BASE SENSOR={sensor} ENABLE={printer.save_variables.variables.filament_sensor[sensor]}
+			
+		# {% endfor %}
+		
+	# {% endif %}
+	
+		
+	
+		
+
+# [gcode_macro FILAMENT_SENSOR_SWAP]
+# description: Swaps the active filament sensor from one to the other.
+# gcode:		
+	# {% if printer.save_variables.variables.filament_sensor is defined %}
+	
+		# {% for sensor in printer.save_variables.variables.filament_sensor %}
+			
+			# {% set sens_val = printer.save_variables.variables.filament_sensor[sensor]|int %}
+			
+			# {% if sens_val == 1 %}
+			
+				# SET_FILAMENT_SENSOR_BASE SENSOR={sensor} ENABLE=0				
+				
+				# M118 {sensor} is now set to 0
+				
+				# {% set filament_sensor = printer.save_variables.variables.filament_sensor %}
+				# {% set _dummy = filament_sensor.update({sensor: 0}) %}
+				
+				# SAVE_VARIABLE VARIABLE=filament_sensor VALUE="{filament_sensor}"	
+				
+			# {% else %}
+			
+				# SET_FILAMENT_SENSOR_BASE SENSOR={sensor} ENABLE=1	
+				
+				# M118 {sensor} is now set to 1
+				
+				# {% set filament_sensor = printer.save_variables.variables.filament_sensor %}
+				# {% set _dummy = filament_sensor.update({sensor: 1}) %}
+				
+				# SAVE_VARIABLE VARIABLE=filament_sensor VALUE="{filament_sensor}"			
+				
+			# {% endif %}		
+			
+		# {% endfor %}
+		
+	
+	# {% endif %}
+	
+
+
+# [delayed_gcode DISABLE_FILAMENT_SENSORS_STARTUP] 
+# initial_duration: 5
+# gcode:
+	# # DISABLE_FILAMENT_SENSORS
+
+# [gcode_macro CHECK_FILAMENT_SENSORS]
+# description: Check filament sensor status.
+# gcode:	
+	# QUERY_FILAMENT_SENSOR SENSOR=SFS_1
+	# QUERY_FILAMENT_SENSOR SENSOR=SFS_2
+	
+
+# [gcode_macro DISABLE_FILAMENT_SENSORS]
+# description: Disable smart filament sensors.
+# gcode:	
+
+	# {% if printer.save_variables.variables.filament_sensor is defined %}
+	
+		# {% for sensor in printer.save_variables.variables.filament_sensor %}
+
+		# # Disable both filament sensors after startup using the base command to avoid overwriting the values		
+		# SET_FILAMENT_SENSOR_BASE SENSOR={sensor} ENABLE=0
+		
+		# {% endfor %}
+		
+	# {% endif %}		
+		
+
+
