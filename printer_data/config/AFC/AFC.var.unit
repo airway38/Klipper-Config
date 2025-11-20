@@ -24,7 +24,9 @@
             "runout_lane": null,
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": "None"
+            "status": "None",
+            "dist_hub": 185.0,
+            "td1_data": {}
         },
         "lane2": {
             "name": "lane2",
@@ -50,7 +52,9 @@
             "runout_lane": null,
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": "None"
+            "status": "None",
+            "dist_hub": 115.0,
+            "td1_data": {}
         },
         "lane3": {
             "name": "lane3",
@@ -76,7 +80,9 @@
             "runout_lane": null,
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": "None"
+            "status": "None",
+            "dist_hub": 120.0,
+            "td1_data": {}
         },
         "lane4": {
             "name": "lane4",
@@ -102,7 +108,9 @@
             "runout_lane": null,
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": "None"
+            "status": "None",
+            "dist_hub": 190.0,
+            "td1_data": {}
         }
     },
     "system": {
