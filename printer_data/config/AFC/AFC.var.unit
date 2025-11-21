@@ -120,7 +120,7 @@
         "num_extruders": 1,
         "extruders": {
             "extruder": {
-                "lane_loaded": null
+                "lane_loaded": ""
             }
         },
         "bypass": {
