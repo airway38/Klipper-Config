@@ -9,22 +9,22 @@
             "buffer_status": "Advancing",
             "lane": 1,
             "map": "T0",
-            "load": false,
+            "load": true,
             "prep": true,
-            "tool_loaded": false,
-            "loaded_to_hub": false,
-            "material": null,
-            "density": 1.24,
+            "tool_loaded": true,
+            "loaded_to_hub": true,
+            "material": "ABS",
+            "density": 1.04,
             "diameter": 1.75,
             "empty_spool_weight": 190,
             "spool_id": null,
-            "color": null,
-            "weight": 0,
+            "color": "",
+            "weight": 996,
             "extruder_temp": null,
             "runout_lane": null,
-            "filament_status": "Prep",
-            "filament_status_led": "#ffffff",
-            "status": "None",
+            "filament_status": "In Tool",
+            "filament_status_led": "#0000ff",
+            "status": "Tooled",
             "dist_hub": 185.0,
             "td1_data": {}
         },
@@ -114,13 +114,13 @@
         }
     },
     "system": {
-        "current_load": null,
+        "current_load": "lane1",
         "num_units": 1,
         "num_lanes": 4,
         "num_extruders": 1,
         "extruders": {
             "extruder": {
-                "lane_loaded": null
+                "lane_loaded": "lane1"
             }
         },
         "bypass": {
